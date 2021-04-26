@@ -1,0 +1,53 @@
+#Main{
+    height: 800px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url(../Images/note-taking.png);
+}
+#Input{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid green;
+}
+#Input--Title{
+    color: black;
+    outline: none;
+    margin: 50px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid green;
+    padding: 10px 50px 0px 5px;
+    
+}
+#Input--Description{
+    color: red;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid green;
+    padding: 10px 50px 0px 5px;
+    
+}
+
+#Input--Button{
+    padding: 3px 30px 3px 30px;
+    border: 1px solid green;
+    color: green;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 2px;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+}
+#Input--Button:hover{
+    background-color: green;
+    color: white;
+}
