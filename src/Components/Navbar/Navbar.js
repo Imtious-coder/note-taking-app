@@ -5,9 +5,11 @@ const Navbar = () => {
         <nav className="bg-dark">
             <div className="container">
                 <div className="row">
+                    {/* Heading */}
                     <div className="col-md-2 mt-2 text-white text-center">
                         <h4>Notes</h4>
                     </div>
+                    {/* Navs..Disable */}
                     <div className="col-md-1 ms-auto mt-2 text-white text-center">
                         <p>Home</p>
                     </div>
