@@ -1,6 +1,6 @@
 # Note-Taking-App
 
-## Live preview(https://affectionate-babbage-69b632.netlify.app/)
+## Live preview(https://heuristic-jones-5e5f63.netlify.app/)
 
 ### Language and tools used
 
