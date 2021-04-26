@@ -1,19 +1,37 @@
 import React from 'react';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import "./Main.css";
 
 const Main = () => {
-    const lol = () => {
-        document.getElementById('lol2').style.display="none";
+    const [note, setNote] = useState({
+        note: ''
+    })
+    console.log(note);
+    const handleSave = () => {
+        document.getElementById('Main').style.display = "none";
+        document.getElementById('Notes').style.display = "block";
+        const Note = document.getElementById('Input--Note').value;
+        setNote({ note: Note })
     }
     return (
         <main>
             <div id="Main">
-                <form id="Input">
-                    <input type="text" name="" id="Input--Title" placeholder="Title" />
-                    <br />
-                    <input type="text" name="" id="Input--Description" placeholder="Description" /> <br />
-                    <button id="Input--Button" onClick={lol} type="submit">Save</button>
-                </form>
+                <div id="Input">
+                    <input type="text" name="" id="Input--Note" placeholder="Write your note here..." /> <br />
+                    <button id="Input--Button" onClick={handleSave} type="submit">Save</button>
+                </div>
+
+            </div>
+            <div className="d-flex align-items-center" id="Notes">
+                <div className="container" >
+                    <div className="row">
+                        <div className="col-md-12">
+                            <p id="Note-Text">"{note.note}"</p>
+                            <div className="text-danger">'Please reload the page to add a new note'</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     );
